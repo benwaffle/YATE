@@ -15,20 +15,15 @@ int main(int argc, char *argv[]){
 		return 1;
 	}
 
-	fp = fopen(argv[1], "a");
-	
-	if (fp == NULL){
+	if ((fp = fopen(argv[1], "a")) == NULL){
 		fprintf(stderr, "Error: can't open %s for writing\n", argv[1]);
 		return 1;
 	}
 	
 	signal(SIGINT, end);	
-	printf("INSTRUCTIONS: ANYTHING YOU TYPE WILL BE WRITTEN TO THE FILE, ^C TO WRITE AND EXIT\n\n");
+	printf("ANYTHING YOU TYPE WILL BE WRITTEN TO THE FILE\n^C TO SAVE AND EXIT\n\n");
 
-	char c;
-	while(1){
-		c = getchar();
-		fprintf(fp, "%c", c);
-	}	
+	while(1)
+		fprintf(fp, "%c", getchar());
 }
 
