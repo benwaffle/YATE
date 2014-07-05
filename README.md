@@ -1,6 +1,9 @@
-YATE
+atto
 ====
 
-Yet Another Text Editor. No bloat.
+atto text editor
 
-Usage: `yate <file name>`
+nano = 10-9
+atto = 10-18
+
+Usage: `atto <file name>`
