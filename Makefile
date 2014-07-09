@@ -1,2 +1,2 @@
 all:
-	gcc -std=c11 -o yate -O3 yate.c
+	gcc -std=c11 -o atto -O3 atto.c

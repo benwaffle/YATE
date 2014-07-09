@@ -1,6 +1,6 @@
-YATE
+atto
 ====
 
-Yet Another Text Editor. No bloat.
+text editor -bloat
 
-Usage: `yate <file name>`
+Usage: `atto <file name>`
