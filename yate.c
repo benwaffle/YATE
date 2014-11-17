@@ -1,3 +1,3 @@
-int main(FILE *f, char **v, int c){
-	for(f = fopen(v[1], "a"), setvbuf(f, NULL, _IONBF, 0); (c=getchar()) != EOF; fprintf(f, "%c", c));
+int main(int f, char **v, int c){
+	for(f = open(v[1], 02101, 0644); (c=getchar()) != EOF; write(f, &c, sizeof(c)));
 }
