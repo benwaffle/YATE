@@ -1,2 +1,2 @@
-all:
-	gcc -std=c11 -o yate -O3 yate.c
+CFLAGS=-std=gnu11 -include stdio.h
+all: yate
